@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./3.css">
+    <title>AiのJavascript</title>
+    <style>
+       *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #eed9eba9;
+        }
+        .game .shell{
+            display: grid;
+            grid-template-columns: repeat(7,40px);
+            grid-template-rows: repeat(7,40px);
+            grid-gap: 1.5rem;
+        }
+        .item{
+            background-color: rgb(40, 40, 40);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+            border-left: solid 10px #fff;
+        }
+        .item::after,.item::before{
+            content: '';
+            width: 5px;
+            height: 5px;
+            display: block;
+            position: absolute;
+            border-radius: 50%;
+            left: 20px;
+            background-color: #fff;
+        }
+        .item::after{
+            top: 25px;
+        }
+        .item::before{
+            bottom: 25px;
+        }
+    </style>
+
+    <body>
+        <!--nav bar-->
+        <header>
+            <div class="navbar">
+                <h1>Let us play ! </h1>
+                <ul class="nav-list">
+                <li><a class="home" href="./index.html"> AiのHome &#128151;</a></li>
+                <li><a href="./2.html"> AiのHTML&CSS &#128151;</a></li>
+                <li><a href="./3.html">AiのJavascript&#128151;</a></li>
+                <li><a href="./4.html">AiのVUE&#128151;</a></li>
+                <li><a href="./5.html"> AiのAbout me &#128151; </a></li>
+                </ul>
+            </div>
+        </header>
+        <!--game-->
+        <div class="game">
+            <div class="shell">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+       <section class="time">
+
+           <div class="text"><p>JavaScript Tutorial </p></div>
+
+           <div class="wrap">
+            <div class="box">
+                <div class="left"></div>
+                <div class="center"><span>
+                    Overview
+                </span></div>
+                <div class="right">JavaScript is the world most popular lightweight, interpreted compiled programming language. It is also known as scripting language for web pages. It is well-known for the development of web pages, many non-browser environments also use it. JavaScript can be used for Client-side developments as well as Server-side developments.
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="left">JavaScript is a lightweight and dynamic computer programming language. It is used to create client-side dynamic pages. It is open-source and cross-platform language.
+                    JavaScript Variables: A JavaScript variable is the simple name of storage location where data to be stored.
+                     <br> There are two types of variables in JavaScript which are listed below: 
+                     <br> Local variables: Declare a variable inside of block or function. 
+                    <br> Global variables: Declare a variable outside function or with a window object.
+                </div>
+                <div class="center"><span>
+                    JavaScript Syntax
+                </span></div>
+                <div class="right"></div>
+            </div>
+    
+            <div class="box">
+                <div class="left"></div>
+                <div class="center"><span>
+                    JavaScript JSON
+                </span></div>
+                <div class="right">JSON or JavaScript Object Notation is a format for structuring data. <br>
+                    Like XML, it is one of the way of formatting the data. Such format of data is used by web applications to communicate with each other.
+
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="left">The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. <br>
+                    here are no official standards for the Browser Object Model (BOM). <br>
+                    Since modern browsers have implemented (almost) the same methods and properties for JavaScript interactivity, it is often referred to, as methods and properties of the BOM.
+                </div>
+                <div class="center"><span>
+                    JavaScript BOM
+                </span></div>
+                <div class="right"></div>
+            </div>
+    
+            <div class="box">
+                <div class="left"></div>
+                <div class="center"><span>
+                    JavaScript DOM
+                </span></div>
+                <div class="right">
+                    With the HTML DOM, JavaScript can access and change all the elements of an HTML document. <br>
+                    JavaScript can change all the HTML elements in the page <br>
+                    JavaScript can change all the HTML attributes in the page <br>
+                    JavaScript can change all the CSS styles in the page <br>
+                    JavaScript can remove existing HTML elements and attributes <br>
+                    avaScript can add new HTML elements and attributes <br>
+                    JavaScript can react to all existing HTML events in the page <br>
+                    JavaScript can create new HTML events in the page
+                </div>
+            </div>
+
+             <!--footer-->
+        <footer>
+            <div class="footer-content">
+                <h3> Designed by Ai Dong</h3>
+                <p>copyright &copy;2021. designed by <span>Ai Dong</span></p>
+            </div>
+        </footer>
+        </div>
+       </section>
+        <script>
+            document.addEventListener('mousemove',e => {
+                const item = document.querySelectorAll(".item")
+    
+                const mouseX = e.clientX
+                const mouseY = e.clientY
+    
+                item.forEach(sqr => {
+                    const sqrX = sqr.offsetLeft
+                    const sqrY = sqr.offsetTop
+    
+                    const diffX = mouseX -sqrX
+                    const diffY = mouseY -sqrY
+    
+                    const radians = Math.atan2(diffY,diffX)
+    
+                    const angle = radians * 180 / Math.PI
+    
+                    sqr.style.transform = `rotate(${angle}deg)`
+                })
+            })
+        </script>
+    </body>
+</head>
+
+
+
+</html>
