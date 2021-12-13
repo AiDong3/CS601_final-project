@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.411),rgba(4, 9, 30, 0.411)),url(./image/bk.jpeg);
+    background-position:  center;
+    background-size: cover;
+    position: relative ;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #af316c;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #af316c;
+    background: #af316c;
+    transition: 1s;
+}
+
+nav .fa{
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+
+/*------media inquiry---------*/
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #af316c;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 10px;
+        cursor: pointer;
+
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+
+/*---------course section -----*/
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 10px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: rgba(247, 227, 232, 0.897);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 15px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*---campus------*/
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.layer:hover{
+    background: rgba(214, 77, 100, 0.548)
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: rgb(184, 130, 166);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position:absolute;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*-------facilities------*/
+.facilities{
+    position: relative;
+    width: 80%;
+    height: 45rem;
+    margin:auto;
+    padding-top: 100px;
+    background-color: #b2a2f371;
+    display: flex;
+}
+.facilities h1{
+    text-align: center;
+    margin-left: 35rem;
+}
+.facilities .a{
+    margin-left: -20rem;
+    width: 270px;
+    height: 420px;
+    position: relative;
+    top: 150px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: .8s;
+}
+.facilities .b,.c,.d,.e,.f{
+    width: 270px;
+    height: 400px;
+    position: absolute;
+    /* 这是翻页的起点，在左边 */
+    transform-origin: left;
+    background-size: cover;
+    /* 这是翻页时元素之间的延迟 */
+    transition: calc(var(--i)*.3s);
+    /* 这是翻页时元素的层级 */
+    z-index: calc(var(--i)*99);
+}
+.facilities.b,.c{
+    border: solid 20px #576574;
+    border-left: none;
+    top: -20px;
+    border-radius: 0 20px 20px 0;
+}
+.facilities .a:hover .b{
+    border-left: #576574 20px solid;
+}
+.facilities .a:hover .c,.a:hover .d,.a:hover .e,.a:hover .f{
+    transform: rotateY(-180deg);
+    /* 此时翻页的顺序会倒过来，所以我们的延迟和层级也要反一下 */
+    transition: calc(var(--s)*.4s);
+    z-index: calc(var(--s)*-99);
+}
+.facilities .a:hover{
+    transform: translateX(100px);
+}
+
+
+/*------call----*/
+.call{
+    margin: 1rem auto;
+    width: 80%;
+    height: 80%;
+    background-image: linear-gradient(rgba(236, 232, 232, 0.363),rgba(136, 132, 132, 0.281)),url(./image/bk1.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.call h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media(max-width:1280px){
+    .facilities h1{
+        margin-left: 15rem;
+    }
+}
+@media(min-width:1280px){
+    .facilities h1{
+        margin-left: 32rem;
+    }
+}
+@media(max-width:810px){
+    .facilities h1{
+        margin-left: 9rem;
+    }
+}
+@media(max-width:700px){
+    .call h1{
+        font-size: 26px;
+    }
+    .facilities h1{
+        margin-left: 1rem;
+    }
+}
+@media(max-width:460px){
+    .facilities h1{
+        margin-left: -2rem;
+    }
+}
+
+
+
+/*------footer-----*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+
+.footer p{
+    color: rgb(201, 111, 111);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 10px;
+    padding: 10px;
+}
+
+.icons{
+    display: block;
+}
+.icons .fa{
+    color: rgb(219, 87, 70);
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+
+}
+
+
+.linkedin{
+    width: 25px;
+    height: 25px;
+}

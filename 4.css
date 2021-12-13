@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    justify-content: space-evenly;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+}
+
+.shell {
+    width: 100px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(17, 24, 39);
+    border-radius: 10px;
+    transition: .3s;
+    position: absolute;
+    
+}
+.box {
+    display: block;
+    height: 15%;
+    width: 85%;
+    margin: 9px;
+    border-radius: 5px;
+    position: relative;
+    transition: .3s;
+    color: rgb(160, 160, 175);
+}
+.box i {
+    font-size: 60px;
+    position: absolute;
+    margin: 7px 0 0 13px;
+}
+.box span{
+    position: relative;
+    top: 22px;
+    left: 80px;
+    font: 500 20px '';
+    opacity: 0;
+    transition: .1s;
+}
+
+/*--background---*/
+.bg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -999;
+    background: rgb(44, 44, 44);
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative
+}
+
+.content span {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 999;
+    margin-top: 300px;
+    color: rgba(255, 255, 255, 0.9);
+    -webkit-text-stroke: #000 2px;
+    font: 600 100px '优设标题黑';
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.images div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+}
+
+.img1 {
+    background-image: url('./image/1.png');
+}
+
+.img2 {
+    background-image: url('./image/2.png');
+}
+
+.img3 {
+    background-image: url('./image/3.png');
+}
+
+.img4 {
+    background-image: url('./image/4.png');
+}
+
+.img5 {
+    background-image: url('./image/5.png');
+}
+
+.img6 {
+    background-image: url('./image/6.png');
+    transform: translate(600px,400px);
+}
+
+/*---vue----*/
+#app{
+    background-color: rgb(43, 42, 42);
+    font: 2em sans-serif;
+    color: rgb(146, 141, 141);
+}
+#app p{
+    margin-left: 3%;
+}
+#app .pic{
+    margin: 1rem auto;
+}
+
+#app .pic img{
+    width: 30rem;
+    height: 30rem;
+    margin-left: 13%;
+}
+#app .zoomin{ 
+    margin: 3rem auto;
+}
+
+#app .zoomin img{
+    width: 20rem;
+    height: 18rem;
+    margin-left: 10%;
+    transition: all ease .5s;
+}
+#app .zoomin img:active{
+    width: 40rem;
+    height: 40rem;
+}
+
+#app .footer{
+    width: 100%;
+}
+#app .footer p{
+    color: lightsalmon;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#app .footer img{
+    margin-top: 1rem;
+    width: 100%;
+    height: 30vh;
+}
+
+#app .footer #footer{
+    height: 7vh;
+    text-align: center;
+    font-size: 1rem;
+    color: rgba(70, 68, 68, 0.925);
+    letter-spacing: .2rem;
+    padding-top: 2rem;
+}

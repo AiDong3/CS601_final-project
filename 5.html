@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font_cqbiizu5og9/iconfont.css">
+    <title>AiのAbout me</title>
+    <link rel="stylesheet" href="./5.css">
+    <script src="https://kit.fontawesome.com/e1600bd1df.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--nav-->
+    <div class="shell">
+        <a href="./index.html" class="box"><i class="iconfont icon-liebiao"></i><span>AiのHome</span></a>
+        <a href="./2.html" class="box"><i class="iconfont icon-cangku"></i><span> AiのHTML&CSS</span></a>
+        <a href="./3.html" class="box"><i class="iconfont icon-zhuti_tiaosepan"></i><span>AiのJavascript</span></a>
+        <a href="./4.html" class="box"><i class="iconfont icon-qianbao"></i><span>AiのVUE</span></a>
+        <a href="./5.html" class="box"><i class="iconfont icon-tupian"></i><span>AiのAbout me</span></a>
+    </div>
+    <section class="no1">
+        <h1>Welcome<br />Aiのblog</h1>
+        <div class="background">
+            <span>Ai</span>
+        </div>
+    </section>
+
+<!---name card-->
+    <section class="no2">
+        <!----Main-->
+    <div class="a">
+        <div class="b">
+            <a href="#">About の Ai</a>
+            <h2>Welcome </h2> 
+            <span>I'm a front-end developer enthusiast,</br>I'm doing MSSD @ BU,<br/>Used to be a law school student.<br/>Keep going!!</span>
+        </div>
+        <div class="c">
+            <!--column animation-->
+            <div class="d" style="--i:1;--w:1.5"></div>
+            <div class="d" style="--i:2;--w:1.6"></div>
+            <div class="d" style="--i:3;--w:1.4"></div>
+            <div class="d" style="--i:4;--w:1.7"></div>
+            <div class="e" style="--i:1"></div>
+        </div>
+        <!-- photo profolio -->
+        <div class="f">
+            <img src="./image/ai.gif" alt="">
+        </div>
+
+        
+    </section>
+
+   <!--schools--> 
+        <div class="school">
+            <label for="button1" class="button" style="--i:0">Undergrad</label>
+            <input type="radio" id="button1" name="page" checked>
+            <div class="page">
+                <div class="page_content">
+                    <h1>China Univeristy of Political Science and Law</h1>
+                    <p>I have finished my undergraduate in here</p>
+                    <span>
+                       This school is the top one law school in China. I had a wonderful study experience over here.
+                    </span>
+                </div>
+            </div>
+    
+    
+            <label for="button2" class="button" style="--i:1">Master's</label>
+            <input type="radio" id="button2" name="page">
+            <div class="page">
+                <div class="page_content">
+                    <h1>Pepperdine Univeristy</h1>
+                    <p>Master of U.S Law</p>
+                    <span> This is mt first master degree. It was also the first time I come to the U.S. Law school is hard and also fun.
+                    </span>
+                </div>
+            </div>
+    
+    
+            <label for="button3" class="button" style="--i:2">Master's</label>
+            <input type="radio" id="button3" name="page">
+            <div class="page">
+                <div class="page_content">
+                    <h1>Boston Univeristy</h1>
+                    <p>M.S of Software Development</p>
+                    <span>
+                        It is a turing point studying in BU. It makes me realize my passion about computer science.
+                    </span>
+                </div>
+            </div>
+        </div>
+    <!--feedback-->
+    <div class="feedback">
+        <div class="box">
+            <h3>How do you like my blog?</h3>
+            <div class="emoji">
+                <div id="emoji">
+                    <img src="./image/poor.png">
+                    <img src="./image/bad.png">
+                    <img src="./image/okay.png">
+                    <img src="./image/good.png">
+                    <img src="./image/excellent.png">
+                </div>
+            </div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    </div>
+    <!--send message-->
+    <div id="wrap">
+		<h1>SEND ME A MESSAGE</h1>
+		<br><br><br>
+		<div id="form-wrap">
+            <!--http://bucs601.com/submit.php-->
+			<form action="https://hur-form-api.herokuapp.com/api/" method="post" id="signup" class="form">
+				<p>HELLO,</p>
+				<label for="email">Your Message:</label>
+				<textarea name="message" id="message" value="Your Message"></textarea>
+				
+				<p>BEST,</p>
+				<label for="name">Name:</label>
+				<input type="text" name="name" value="" id="name" />
+               
+				
+				<label for="email">Email:</label>
+				<input type="text" name="email" value="" id="email" />
+            
+				
+				<input type="submit" name="btnSubmit" value="NOW, I SEND THANKS!" />
+			</form>
+		</div>
+	</div>
+    <!--fetch data-->
+    <div class="data">
+        <img src="./image/click333.gif">
+        <button id="fetch">Click me to fetch</button>
+        <span class="span1" id="span1">
+
+        </span>
+    </div>
+
+    <script>
+        var stars = document.getElementsByClassName("fas");
+        var emoji = document.getElementById("emoji");
+
+        stars[0].onclick = function(){
+            stars[0].style.color = "#ffd93b";
+            stars[1].style.color = "#e4e4e4";
+            stars[2].style.color = "#e4e4e4";
+            stars[3].style.color = "#e4e4e4";
+            stars[4].style.color = "#e4e4e4";
+            emoji.style.transform = "translateX(0)";
+        }
+        stars[1].onclick = function(){
+            stars[0].style.color = "#ffd93b";
+            stars[1].style.color = "#ffd93b";
+            stars[2].style.color = "#e4e4e4";
+            stars[3].style.color = "#e4e4e4";
+            stars[4].style.color = "#e4e4e4";
+            emoji.style.transform = "translateX(-100px)";
+        }
+        stars[2].onclick = function(){
+            stars[0].style.color = "#ffd93b";
+            stars[1].style.color = "#ffd93b";
+            stars[2].style.color = "#ffd93b";
+            stars[3].style.color = "#e4e4e4";
+            stars[4].style.color = "#e4e4e4";
+            emoji.style.transform = "translateX(-200px)";
+        }
+        stars[3].onclick = function(){
+            stars[0].style.color = "#ffd93b";
+            stars[1].style.color = "#ffd93b";
+            stars[2].style.color = "#ffd93b";
+            stars[3].style.color = "#ffd93b";
+            stars[4].style.color = "#e4e4e4";
+            emoji.style.transform = "translateX(-300px)";
+        }
+        stars[4].onclick = function(){
+            stars[0].style.color = "#ffd93b";
+            stars[1].style.color = "#ffd93b";
+            stars[2].style.color = "#ffd93b";
+            stars[3].style.color = "#ffd93b";
+            stars[4].style.color = "#ffd93b";
+            emoji.style.transform = "translateX(-400px)";
+        }
+        
+    </script>
+    <script src="./5.js"></script>
+</body>
+
+</html>
