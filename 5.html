@@ -122,18 +122,18 @@
 			<form action="https://hur-form-api.herokuapp.com/api/" method="post" id="signup" class="form">
 				<p>HELLO,</p>
 				<label for="email">Your Message:</label>
-				<textarea name="message" id="message" value="Your Message"></textarea>
+				<textarea name="message" id="message" value="Your Message" required></textarea>
 				
 				<p>BEST,</p>
 				<label for="name">Name:</label>
-				<input type="text" name="name" value="" id="name" />
+				<input type="text" name="name" value="" id="name" required />
                
 				
 				<label for="email">Email:</label>
-				<input type="text" name="email" value="" id="email" />
+				<input type="text" name="email" value="" id="email" required/>
             
 				
-				<input type="submit" name="btnSubmit" value="NOW, I SEND THANKS!" />
+				<input type="submit" name="btnSubmit" value="NOW, I SEND THANKS!" required />
 			</form>
 		</div>
 	</div>
@@ -192,6 +192,7 @@
         }
         
     </script>
+
     <script src="./5.js"></script>
 </body>
 

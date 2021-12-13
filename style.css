@@ -240,15 +240,15 @@ h3{
     height: 45rem;
     margin:auto;
     padding-top: 100px;
-    background-color: #b2a2f371;
+    background-color: #b2a2f344;
     display: flex;
+    border-radius: 10px;
 }
 .facilities h1{
-    text-align: center;
-    margin-left: 35rem;
+    margin-left: 1rem;
 }
 .facilities .a{
-    margin-left: -20rem;
+    margin-left: -25rem;
     width: 270px;
     height: 420px;
     position: relative;

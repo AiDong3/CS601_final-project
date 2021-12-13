@@ -12,9 +12,12 @@ const background = document.querySelector(".background")
         })
 
 /* check message */
+
+
 const form = document.querySelector('#signup');
 
 const messageEl = document.querySelector('#message');
+messageEl.required = false;
 
 const checkMessage =() =>{
     let valid = false;
@@ -22,7 +25,7 @@ const checkMessage =() =>{
     const message = messageEl.value.trim();
 
     if(!isRequired(message)){
-        showError('Message cannot be blank.')
+        showError("I am expecting you message ~");
     }else{
         valid = true;
     }
@@ -31,6 +34,8 @@ const checkMessage =() =>{
 
 /* check name */
 const nameEl = document.querySelector('#name');
+nameEl.required = false;
+
 const checkName = () => {
 
     let valid = false;
@@ -38,7 +43,7 @@ const checkName = () => {
     const name = nameEl.value.trim();
 
     if (!isRequired(name)) {
-        showError( 'Name cannot be blank.');
+       showError("what's your name?")
     }
     else {
         valid = true;
@@ -48,11 +53,12 @@ const checkName = () => {
 
 /*check email */
 const emailEl = document.querySelector('#email');
+emailEl.required = false;
 const checkEmail = () => {
     let valid = false;
     const email = emailEl.value.trim();
     if (!isRequired(email)) {
-        showError('Email cannot be blank.');
+        email.setCustomValidity("Can I have your email?");
     } else {
         valid = true;
     }
@@ -82,7 +88,7 @@ form.addEventListener('submit', function (e) {
 
     // submit to the server if the form is valid
     if (isFormValid) {
-        this.submit();
+        return true;
     }
 });
 
